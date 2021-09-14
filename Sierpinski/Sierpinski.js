@@ -261,13 +261,19 @@ function load() {
             ctx.strokeStyle = "#ffffff";
             mode = "Light";
         }
-            document.querySelector("body").setAttribute("style", "background-color: " + color + ";");
-            document.querySelector("#Start").classList = cls;
-            document.querySelector("#light").classList = cls;
-            document.querySelector('#light').value = mode + " Mode";
-            document.querySelector('#auto').classList = cls;
-            document.querySelector("#advance").classList = cls;
-            document.querySelector("#zoom").classList = cls;
+        try {
+                document.querySelector("body").setAttribute("style", "background-color: " + color + ";");
+                document.querySelector("#Start").classList = cls;
+                document.querySelector("#light").classList = cls;
+                document.querySelector('#light').value = mode + " Mode";
+                document.querySelector('#auto').classList = cls;
+                document.querySelector("#advance").classList = cls;
+                document.querySelector("#zoom").classList = cls;
+            }
+          catch(err) {
+            console.log(err);    
+        } 
+            
             tri.draw();
     }
     function toggleAuto() {
