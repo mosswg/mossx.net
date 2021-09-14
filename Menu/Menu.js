@@ -19,6 +19,7 @@ function toggleMenu() {
         }   
         else {        
             menu_is_chaging = true;
+            openMenu();
             menu_amimation = setInterval(openMenu, 100);
             menu_is_open = true;
         }
