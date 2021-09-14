@@ -1,4 +1,23 @@
 
+.menu_vertical {
+    display: table;
+    padding-left: 0%;
+}
+
+.menu_horizontal {
+    display: flex;
+    padding-left: 0%;
+}
+
+
+
+.menu_list {
+    text-align: inherit;
+    display: inherit;
+    padding-top: 0%;
+    padding-left: 0%;
+}
+
 
 
 li {
@@ -6,43 +25,21 @@ li {
 }
 
 
-#menu {
-    display: flex;
-    position: relative;
-    padding-left: 0%;
-}
-
-
-.menu_button {
-    position: relative;
-    width: 4ch;
-    height: 75%;
-    cursor: pointer;
-}
-
-.menu_button_text {
-    margin: 0px;
-    vertical-align: middle;
-}
-
-.menu_button:active {
-    background: #5c636a;
-}
-
-.menu_list {
-    display: inherit;
-    padding-top: 0%;
-    padding-left: 0%;
-}
-
 .menu_item {
     display: block;
-    text-align: left;
+    text-align: inherit;
     position: relative;
+}
+
+.menu_collapsible {
     left: -150%;
     transition: 0.5s;
 }
 
+.menu_static {
+    left: 0% !important;
+    transition: 0s;
+}
 
 
 .disable-select {
