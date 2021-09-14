@@ -1,0 +1,44 @@
+
+
+
+li {
+    list-style: none;
+}
+
+
+#menu {
+    position: absolute;
+    position: relative;
+    padding-left: 1%;
+}
+
+.menu_toggle {
+    display: inherit;
+    text-align: left;
+    vertical-align: middle;
+}
+
+
+.menu_list {
+    display: table;
+    padding-top: 0%;
+    padding-left: 0%;
+}
+
+.menu_item {
+    display: inherit;
+    text-align: left;
+    position: relative;
+    left: -150%;
+    transition: 0.5s;
+}
+
+
+
+.disable-select {
+    user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+}

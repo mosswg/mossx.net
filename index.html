@@ -1,17 +1,43 @@
 <!DOCTYPE html>
 <html>
 	<title>
-	mossx landing page
+	Moss Gallagher's Website
 	</title>
 
-	<head>
-		<meta charset="UTF-8">
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-	</head>
+	<head>
+		
+		<meta charset="UTF-8">
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+
+
+		<link href="Menu_Horizontal.css" rel="stylesheet">
+		
 	
-	<body>
-	<a href="Sierpinski/Sierpinski.html">Recursion Stuffs</a>
+	</head>
+
+
+	
+	<body class="bg-dark">
+
+	<div id="menu">
+
+		<div class="menu_list btn-group">
+			<button type="button" class="btn btn-secondary menu_toggle" onclick="toggleMenu()">&#9776;</button>
+			<button type="button" class="btn btn-secondary menu_item" onclick="window.location.href='Sierpinski.html'">Sierpinski's Triangle</button>
+			<button type="button" class="btn btn-secondary menu_item" onclick="window.location.href='about.html'">About Me</button>
+			<button type="button" class="btn btn-secondary menu_item" onclick="window.location.href='about.html'">Menu Example 1</button>
+			<button type="button" class="btn btn-secondary menu_item" onclick="window.location.href='about.html'">Menu Example 2</button>
+			<button type="button" class="btn btn-secondary menu_item" onclick="window.location.href='about.html'">Menu Example 3</button>
+
+		</div>
+
+	</div>
+	
+
+	
+	<script src=Menu.js> </script>	
 	</body>
 
 

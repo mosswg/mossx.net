@@ -1,0 +1,54 @@
+
+
+
+li {
+    list-style: none;
+}
+
+
+#menu {
+    display: flex;
+    position: relative;
+    padding-left: 0%;
+}
+
+
+.menu_button {
+    position: relative;
+    width: 4ch;
+    height: 75%;
+    cursor: pointer;
+}
+
+.menu_button_text {
+    margin: 0px;
+    vertical-align: middle;
+}
+
+.menu_button:active {
+    background: #5c636a;
+}
+
+.menu_list {
+    display: inherit;
+    padding-top: 0%;
+    padding-left: 0%;
+}
+
+.menu_item {
+    display: block;
+    text-align: left;
+    position: relative;
+    left: -150%;
+    transition: 0.5s;
+}
+
+
+
+.disable-select {
+    user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+}
