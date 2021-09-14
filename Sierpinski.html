@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<title>Sierpiński's triangle</title>
+
+<script src=sierpinskiTriangle.js>
+</script>
+<head>
+<link href="bootstrap.min.css" rel="stylesheet" type="text/css">
+</head>
+<meta charset="UTF-8"/>
+
+
+<style> 
+    /*
+    #btn-left{
+        position: absolute;
+        justify-content: left;
+        align-items: left;
+    }
+    #btn-right {
+        position: absolute;
+        margin-left: auto; 
+        margin-right: 0;
+        justify-content: right;
+        align-items: right;
+    }
+    div {  
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
+    #Start{
+        margin: 2px;
+    }
+    input{
+        margin: 3px;
+        left: 50%;
+    }
+    #back-div {
+    	position: absolute;
+	left: 0%;
+    }
+</style>
+
+<body style="background-color: gray;"  onload="load()">
+	<div id="back-div">
+	<input id="Back" type="button" onclick="window.location.href='recursion';" class="btn btn-outlin-dark align-middle" value="<- Back"> </input>
+	</div>
+    <span style="display: flex; justify-content: space-around">
+    <div id = "btn-left">
+        <input id="light" type="button" onclick="toggleLight()" class="btn btn-outline-light align-middle" value="Light Mode">
+    </div>
+    <div id="btn-center">
+        <input id="Start" type="button" onclick="start()" class="btn btn-outline-light align-middle" value="Create Triangle">
+    </div>
+    <div id="btn-right">
+        <input id="auto" type="button" onclick="toggleAuto()" class="btn btn-outline-light align-middle" value="Auto Split Off">
+    </div>
+    </span>
+</br>
+    <canvas id="triangles" width="1" height="1">
+    </canvas>    
+
+</body>
+
+</html>
