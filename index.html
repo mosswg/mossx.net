@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html style="height: 100%;">
 	<title>
-	Moss Gallagher's Website
+	Moss | Landing Page
 	</title>
 
 
@@ -13,37 +13,45 @@
 
 
 
-		<link href="Menu/Horizontal.css" rel="stylesheet">
+		<link href="Menu/Menu.css" rel="stylesheet">
 		
 	
 	</head>
 
 
-	
-	<body class="bg-dark text-secondary">
+	<style>
+		btn_no_shadow:focus {
+			box-shadow: 0 0 0 0 rgba(108,117,125,.5);
+		}
 
-	<div id="menu">
+	</style>
+
+
+
+	
+	<body class="bg-dark text-secondary" style="width: 100%; height: 100%;">
+
+	<div class="menu_horizontal position-relative">
 
 		<div class="menu_list btn-group">
-			<button type="button" class="btn btn-secondary menu_toggle" onclick="toggleMenu()">&#9776;</button>
-			<button type="button" class="btn btn-secondary menu_item" onclick="window.location.href='about.html'">About Me</button>
-			<button type="button" class="btn btn-secondary menu_item" onclick="window.location.href='Sierpinski.html'">Sierpinski's Triangle</button>
-			<button type="button" class="btn btn-secondary menu_item" onclick="window.location.href='https://github.com/mossx420/mossx.net'">Website Source</button>
+			<a role="button" class="btn btn-outline-secondary menu_item menu_static" onclick="toggleMenu()">&#9776;</a>
+			<a role="button" class="btn btn-outline-secondary menu_item menu_collapsible" href="about.html">About Me</a>
+			<a role="button" class="btn btn-outline-secondary menu_item menu_collapsible" href="Sierpinski.html">Sierpinski's Triangle</a>
+			<a role="button" class="btn btn-outline-secondary menu_item menu_collapsible" href="https://github.com/mossx420/mossx.net">Website Source</a>
 
 		</div>
 
 	</div>
 
-	<br>
+		<div class="position-absolute bottom-50 start-50 translate-middle text-center">
+			<p >
+				<h3> Sorry For Ugly Website</h3>
 
-	<p>
-		<h3> Sorry For Ugly Website</h3>
-
-		I normally code in an actual programming language
+			I normally code in an actual programming language /j
 
 
-	</p>
-	
+			</p>
+		</div>
 
 	
 	<script src=Menu/Menu.js> </script>	

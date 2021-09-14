@@ -250,6 +250,7 @@ function load() {
         var color;
         var mode;
         if (lightMode) {
+            menuCls = " menu_item menu_collapsible";
             cls = "btn btn-outline-dark align-middle";
             ctx.strokeStyle = "#000000";
             color = "white";
@@ -263,6 +264,13 @@ function load() {
         }
         try {
                 document.querySelector("body").setAttribute("style", "background-color: " + color + ";");
+                var menu_items = document.getElementsByClassName("menu_item");
+                console.log(menu_items);
+                menu_items[0].classList = cls + " menu_item menu_static";
+                for (i = 1; i < menu_items.length; i++) {
+                    console.log(i + "   " + menu_items.length);
+                    menu_items[i].classList = cls + menuCls;
+                }
                 document.querySelector("#Start").classList = cls;
                 document.querySelector("#light").classList = cls;
                 document.querySelector('#light').value = mode + " Mode";
