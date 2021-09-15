@@ -87,8 +87,8 @@ class MenuElement {
 const files = [
     new MenuElement("Home", "index", "btn btn-outline-secondary menu_item ", [1, 2, 3], ""),
     new MenuElement("About Me", "about", "btn btn-outline-secondary menu_item ", [0, 2, 3]),
-    new MenuElement("Sierpinski's triangle", "btn btn-outline-light menu_item ", "sierpinski", [0, 2, 3]),
-    new MenuElement("Contact", "contact", "btn btn-outline-secondary menu_item ", [0, 1, 3])
+    new MenuElement("Sierpinski's triangle", "btn btn-outline-light menu_item ", "sierpinski", [0, 1, 3]),
+    new MenuElement("Contact", "contact", "btn btn-outline-secondary menu_item ", [0, 1, 2])
 ];
 const external_menu_elements = [
     new MenuElement("Source", "https://github.com/mossx-dev/mossx.net", []),
