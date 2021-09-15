@@ -1,5 +1,4 @@
 # mossx.net
 
-This is a repo for the files for my website hosted at https://www.mossx.net/
+The code for my website which contains information about me, my projects, and my links. The website is hosted at https://www.mossx.net/
 
-Website is now live with updated code!
