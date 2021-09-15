@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-    <header>
+    <head>
+
+		<meta charset="UTF-8">
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
@@ -8,27 +10,20 @@
 
          <script src="Menu/Menu.js"></script>
 
-    </header>
+    </head>
 
 
     <title>
         Moss | About
     </title>
 
+
+    <body class="bg-dark text-secondary text-center position-absolute" style="width: 100%; height: 100%;" >
     <div class="menu_horizontal position-relative">
-
-		<div class="menu_list btn-group">
-			<a role="button" class="btn btn-outline-secondary menu_item menu_static" onclick="toggleMenu()">&#9776;</a>
-			<a role="button" class="btn btn-outline-secondary menu_item menu_collapsible" href="/">Home</a>
-			<a role="button" class="btn btn-outline-secondary menu_item menu_collapsible" href="sierpinski">Sierpinski's Triangle</a>
-			<a role="button" class="btn btn-outline-secondary menu_item menu_collapsible" href="https://github.com/mossx420/mossx.net">Source</a>
-			<a role="button" class="btn btn-outline-secondary menu_item menu_collapsible" href="https://www.thequeerkiwi.com/">Activism</a>
-
-		</div>
-
-	</div>
-
-    <body class="bg-dark text-secondary text-center position-absolute" style="width: 100%; height: 100%;">
+        <script type="text/javascript">
+            create_menu();
+         </script>
+    </div>
     <div class="position-relative" style="width: 60%; left: 20%;">
         <div class="position-absolute w-60 start-50 translate-middle-x">
             <p>
@@ -43,7 +38,7 @@
                 Projects
             </h2>
             <br>
-                My projects can be found on <a style="color: rgba(var(--bs-secondary-rgb),var(--bs-text-opacity));" href="https://github.com/mossx420">github</a> but be warned most of them are very old and very bad.  
+                My projects can be found on <a style="color: rgba(var(--bs-secondary-rgb),var(--bs-text-opacity));" href="https://github.com/mossx-dev">github</a> but be warned most of them are very old and very bad.  
             </p>
             <br><br>
             <h2>
@@ -61,11 +56,16 @@
 
     </body>    
     
-    <footer class="position-absolute text-center align-bottom bottom-0 w-100" style="background-color: var(--bs-gray-dark);">
+    <footer class="position-absolute align-bottom bottom-0 w-100" style="background-color: var(--bs-gray-dark);">
 		<p class="p-0 m-0">
-			<a href="https://github.com/mossx420"><img class="logo" src="logo_GitHub.png" width="1.5%"></a> 
+            <span class="copyright text-start" style="left: 0;">
+                &#169; Moss Gallagher 2021
+            </span>
+            <span class="start-100 links text-end" style="right: 0;">
+			<a href="https://github.com/mossx-dev"><img class="logo" src="logo_GitHub.png" width="1.5%"></a> 
 			<a href="https://stackoverflow.com/users/15068365/mossx"><img class="logo" src="logo_stackoverflow.png" width="1.5%"></a> 
-		</p>
+            </span>
+        </p>
 	</footer>
 
 
