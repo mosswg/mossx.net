@@ -37,9 +37,10 @@ function create_menu_elements() {
 
     
     var file_uri = document.baseURI.split('/');
-    file_name = file_uri[file_uri.length-1];
+    file_name = file_uri[file_uri.length-1].split('.')[0];
 
-    if (file_name == "sierpinski.html") {
+
+    if (file_name == "sierpinski") {
         var button_class = "btn btn-outline-light menu_item ";
     }
     else {
@@ -57,7 +58,7 @@ function create_menu_elements() {
     var menu_item = document.createElement('a');
     menu_item["role"] = "button";
     menu_item.classList = button_class + "menu_collapsible";
-    if (file_name != "index.html") {
+    if (file_name != "index" && file_name != "") {
         menu_item.text = "Home";
         menu_item.href = "/";
     }
@@ -70,7 +71,7 @@ function create_menu_elements() {
     menu_item = document.createElement('a');
     menu_item["role"] = "button";
     menu_item.classList = button_class + "menu_collapsible";
-    if (file_name != "sierpinski.html") {
+    if (file_name != "sierpinski") {
         menu_item.text = "Sierpinski's Triangle";
         menu_item.href = "sierpinski";
     }
