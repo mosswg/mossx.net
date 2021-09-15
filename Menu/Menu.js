@@ -101,7 +101,7 @@ function create_menu_elements() {
     file_name = file_uri[file_uri.length-1].split('.')[0];
 
     for (i = 0; i < files.length; i++) {
-        if (file_name == files[i].file_name || (files[i].alternative_file_name && files[i].alternative_file_name == file_name)) {
+        if (file_name == files[i].file_name || (files[i].alternative_file_name != null && files[i].alternative_file_name == file_name)) {
             files[i].create_elements();
             break;
         }
