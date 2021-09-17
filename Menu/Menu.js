@@ -179,7 +179,7 @@ function create_footer() {
     github_link.href = "https://github.com/mossx-dev";
 
     var github_img = document.createElement('img');
-    github_img.src = "logo_GitHub.png";
+    github_img.src = "logos/github.png";
     github_img.width = "24";
 
     github_link.appendChild(github_img);
@@ -194,7 +194,7 @@ function create_footer() {
     stackoverflow_link.href = "https://stackoverflow.com/users/15068365/mossx";
 
     var stackoverflow_img = document.createElement('img');
-    stackoverflow_img.src = "logo_stackoverflow.png";
+    stackoverflow_img.src = "logos/stackoverflow.png";
     stackoverflow_img.width = "24";
 
     stackoverflow_link.appendChild(stackoverflow_img);
