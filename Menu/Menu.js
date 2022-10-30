@@ -87,12 +87,11 @@ class MenuElement {
 const files = [
     new MenuElement("Home", "index", "btn btn-outline-secondary menu_item ", [1, 2, 3], ""),
     new MenuElement("About Me", "about", "btn btn-outline-secondary menu_item ", [0, 2, 3]),
-    new MenuElement("Sierpinski's triangle", "sierpinski", "btn btn-outline-light menu_item ", [0, 1, 3]),
+    new MenuElement("Projects", "projects", "btn btn-outline-secondary menu_item ", [0, 1, 3]),
     new MenuElement("Contact", "contact", "btn btn-outline-secondary menu_item ", [0, 1, 2])
 ];
 const external_menu_elements = [
-    new MenuElement("Source", "https://github.com/mossx-dev/mossx.net", []),
-    new MenuElement("Activism", "https://www.thequeerkiwi.com", [])
+    new MenuElement("Source", "https://github.com/mossx-dev/mossx.net", [])
 ];
 
 function create_menu_elements() {
@@ -103,10 +102,12 @@ function create_menu_elements() {
     for (i = 0; i < files.length; i++) {
         if (file_name == files[i].file_name || (files[i].alternative_file_name != null && files[i].alternative_file_name == file_name)) {
             files[i].create_elements();
-            break;
+            return;
         }
     }
 
+
+	new MenuElement("", "", "btn btn-outline-secondary menu_item ", [0, 1, 2, 3]).create_elements();
 }
 
 
