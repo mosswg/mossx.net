@@ -10,6 +10,8 @@
 
          <script src="Menu/Menu.js"></script>
 
+         <link rel="stylesheet" href="style/contact.css">
+
     </head>
 
 
@@ -25,29 +27,64 @@
          </script>
     </div>
     <div class="position-relative" style="width: 60%; left: 20%;">
-        <div class="position-relative start-50 translate-middle-x">
-            <p>
+        <div class="position-relative start-50 translate-middle-x ">
+            <br>
             <h1>
                 Contact Information
             </h1>
             <br>
             
             <br><br>
-            <h3>
-                Email
-            </h3>
-                My Email for projects is <a href="mailto: moss@mossx.net" style="color: rgba(var(--bs-secondary-rgb),var(--bs-text-opacity));">moss@mossx.net</a> <br>
-                My Personal Email is <a href="mailto: aplay624@gmail.com" style="color: rgba(var(--bs-secondary-rgb),var(--bs-text-opacity));">aplay624@gmail.com</a>
-            </p>
-            <br><br>
-            <h3>
-                Social Media 
-            </h3>
-            <p> 
-                Social Media Links can be found at the footer of any page on this site but just in case here they are again. <br>
-                <a href="https://stackoverflow.com/users/15068365/mossx" style="color: rgba(var(--bs-secondary-rgb),var(--bs-text-opacity));">StackOverflow</a>  <br>
-                <a href="https://github.com/mossx-dev" style="color: rgba(var(--bs-secondary-rgb),var(--bs-text-opacity));">GitHub</a>
-            </p>
+            
+            <div style="display: flex;
+            justify-content: center;">
+                <div oncopy="navigator.clipboard.writeText('moss@mossx.net')" tabindex="1" title="Email" class="email__card card_" style="position: relative; top: 50%; left: -2%; transform: translateY(65%);">
+                <div class="email__inner card__inner">
+              
+                  <span class="card__front">
+                      <img class="card__front" src="logos/email.png" width=128></a>
+                   </span><!-- .card__back --> 
+              
+                  <span class="email__back card__back">
+                      
+                <a href="mailto: moss@mossx.net" style="color: rgba(0, 0, 0, var(--bs-text-opacity));">
+                    <span>moss@mossx.net</span> 
+                </a>
+                  </span><!-- .card__back -->
+              
+                </div><!-- .card__inner -->
+                </div>
+                <!-- <span class="card__inner" style="position: relative; padding: 2rem; left: -2rem;"><a href="mailto: moss@mossx.net"><img class="card__front" src="logos/email.png" width=128></a></span> <!-- My Email is <a href="mailto: moss@mossx.net" style="color: rgba(var(--bs-secondary-rgb),var(--bs-text-opacity));">moss@mossx.net</a> <br> -->
+                
+                <div oncopy="navigator.clipboard.writeText('864-634-5459')" tabindex="2" title="Signal" class="signal__card card_" style="position: relative; top: 50%; left: 2%; transform: translateY(50%);">
+                    <div class="signal_inner card__inner">
+                  
+                      <span class="card__front">
+                        <img src="logos/signal.png" width=128>
+                       </span><!-- .card__back --> 
+                  
+                      <span class="signal__back card__back">
+                         <span class="gray-background">864-634-5459</span> 
+                      </span><!-- .card__back -->
+                  
+                    </div><!-- .card__inner -->
+                    </div>
+
+                <div oncopy="navigator.clipboard.writeText('@moss#3929')" tabindex="3" title="Discord" class="discord__card card_" style="position: relative; top: 50%; left: 6%; transform: translateY(45%);">
+                    <div class="discord_inner card__inner">
+                  
+                      <span class="card__front">
+                        <img src="logos/discord-logo-blue.png" width=128>
+                       </span><!-- .card__back --> 
+                  
+                      <span class="discord__back card__back">
+                         <span class="gray-background">@moss#3929</span> 
+                      </span><!-- .card__back -->
+                  
+                    </div><!-- .card__inner -->
+                    </div>
+                </div>
+                </div>
         </div>
     </div>
 

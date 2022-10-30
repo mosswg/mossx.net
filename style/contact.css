@@ -1,0 +1,86 @@
+.card_:hover .card__inner,
+.card_:active .card__inner,
+.card_:focus .card__inner
+    {
+    transform: rotateY(180deg);
+    }
+
+    .email__card,
+    .email__inner {
+      float: left;
+      position: relative;
+    
+      width: 128px;
+    }
+
+    .signal__card,
+    .signal__inner {
+      float: right;
+      position: relative;
+     
+      width: 128px;
+    }
+
+    .discord__card,
+    .discord__inner {
+      float: right;
+      position: relative;
+     
+      width: 128px;
+    }
+    
+    .card__inner {
+      transition: transform .25s ease-in-out;
+
+      
+        transform-origin: 50% 50%;
+        transform-style: preserve-3d;
+    }
+
+    .card__back {
+        transform: rotateY(180deg);
+    }
+  
+    .card__back
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        display: flex;
+    
+        width: 100%;
+        height: 100%;
+    
+        color: #000;
+        background-color: #fff;
+    
+        justify-content: center;
+        align-items: center;
+        backface-visibility: hidden;
+    }
+
+    .email__back {
+        border: 2px solid #fff;
+        border-radius: 15px;
+    }
+
+    .signal__back {
+        color: #fff;
+        background-color: transparent;
+    }
+
+    .discord__back {
+        color: #fff;
+        background-color: transparent;
+    }
+
+    .gray-background::selection {
+        background: #888;
+    }
+
+    .card_ {
+        background-color: transparent;
+
+        outline: 0px;
+    }
