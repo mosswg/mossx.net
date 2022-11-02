@@ -1,52 +1,52 @@
 
 .menu_vertical {
-    display: table;
-    padding-left: 0%;
+	display: table;
+	padding-left: 0%;
 }
 
 .menu_horizontal {
-    display: flex;
-    padding-left: 0%;
+	display: flex;
+	padding-left: 0%;
 }
 
 
 
-.menu_list { 
-    display: inherit;
-    padding-top: 0%;
-    padding-left: 0%;
+.menu_list {
+	display: inherit;
+	padding-top: 0%;
+	padding-left: 0%;
 }
 
 
 
 li {
-    list-style: none;
+	list-style: none;
 }
 
 
 .menu_item {
-    display: block;
-    text-align: inherit;
-    position: relative;
+	display: block;
+	text-align: inherit;
+	position: relative;
 }
 
 .menu_collapsible {
-    z-index: 1;
-    left: -100%;
-    transition: 0.5s;
+	z-index: 1;
+	left: -100%;
+	transition: 0.5s;
 }
 
 .menu_static {
-    z-index: 4;
-    left: 0%;
-    transition: 0s;
+	z-index: 4;
+	left: 0%;
+	transition: 0s;
 }
 
 
 .disable-select {
-    user-select: none; /* supported by Chrome and Opera */
-   -webkit-user-select: none; /* Safari */
-   -khtml-user-select: none; /* Konqueror HTML */
-   -moz-user-select: none; /* Firefox */
-   -ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* supported by Chrome and Opera */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
 }
