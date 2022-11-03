@@ -1,20 +1,18 @@
 
 .menu_vertical {
 	display: table;
-	padding-left: 0%;
+	margin-top: 3px;
 }
 
 .menu_horizontal {
 	display: flex;
-	padding-left: 0%;
+	margin-top: 3px;
 }
 
 
 
 .menu_list {
 	display: inherit;
-	padding-top: 0%;
-	padding-left: 0%;
 }
 
 
@@ -22,6 +20,7 @@
 li {
 	list-style: none;
 }
+
 
 
 .menu_item {
