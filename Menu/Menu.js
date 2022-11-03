@@ -69,7 +69,7 @@ class MenuElement {
 			var file = files[this.menu_order[i]];
 			menu_item.classList = this.button_class + "menu_collapsible";
 			menu_item.text = file.text;
-			menu_item.href = file.alternative_file_name ? file.alternative_file_name : file.file_name;
+			menu_item.href = file.alternative_file_name != null ? file.alternative_file_name : file.file_name;
 			if (menu_is_vertical) {
 				// Checking if the current menu element is the last in the list
 				if (external_menu_elements.length == 0 || i != this.menu_order.length - 1) {
@@ -89,7 +89,7 @@ class MenuElement {
 			var file = external_menu_elements[i];
 			menu_item.classList = this.button_class + "menu_collapsible";
 			menu_item.text = file.text;
-			menu_item.href = file.alternative_file_name ? file.alternative_file_name : file.file_name;
+			menu_item.href = file.alternative_file_name != null ? file.alternative_file_name : file.file_name;
 			// Checking if the current menu element is the last in the list
 			if (menu_is_vertical) {
 				if (i != external_menu_elements.length - 1) {
@@ -110,7 +110,7 @@ class MenuElement {
 }
 
 const files = [
-	new MenuElement("Home", "index", "btn btn-outline-secondary menu_item ", [1, 2, 3], ""),
+	new MenuElement("Home", "index", "btn btn-outline-secondary menu_item ", [1, 2, 3], "/"),
 	new MenuElement("About Me", "about", "btn btn-outline-secondary menu_item ", [0, 2, 3]),
 	new MenuElement("Projects", "projects", "btn btn-outline-secondary menu_item ", [0, 1, 3]),
 	new MenuElement("Contact", "contact", "btn btn-outline-secondary menu_item ", [0, 1, 2])
