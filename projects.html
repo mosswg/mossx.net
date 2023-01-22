@@ -19,15 +19,18 @@
 				color: var(--bs-gray-900);
 			}
 
-			.split-1 {
+			.split {
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				height: 30%;
-				top: 10%;
 				position: fixed;
 				z-index: 1;
-				overflow-x: hidden;
+				overflow: hidden;
+			}
+
+			.split-1 {
+				height: 30%;
+				top: 10%;
 			}
 
 			.left-img {
@@ -42,14 +45,8 @@
 			}
 
 			.split-2 {
-				display: flex;
-				justify-content: center;
-				align-items: center;
 				height: 30%;
 				top: 60%;
-				position: fixed;
-				z-index: 1;
-				overflow-x: hidden;
 			}
 
 			.left-text {
@@ -90,24 +87,24 @@
 
 	<div class="project">
 		<a href="sierpinski" style="color: rgba(0, 0, 0, var(--bs-text-opacity));">
-		<div class="split-1 left-img text-center">
-			<div> <img src="SierpinskiFiles/just-sierpinskis-triangle.png" style="position: relative; width: 60%; height: 10%; object-fit: contain"></img></div>
+		<div class="split split-1 left-img text-center">
+			<img src="SierpinskiFiles/just-sierpinskis-triangle.png" style="position: relative; object-fit: cover; height: 100%"></img>
 		</div>
-		<div class="split-1 right-text">
+		<div class="split split-1 right-text">
 			<span class="inner-text"> <h1>Sierpiński's Triangle Fractal</h1> </span>
 		</div>
 		</a>
 	</div>
 
-		<!-- TODO: Replace This With A Different Project -->
 	<div class="project">
-		<div class="split-2 right-img text-center">
-			<div> <a href="sierpinski"><img src="SierpinskiFiles/just-sierpinskis-triangle.png" style="position: relative; width: 60%; height: 10%; object-fit: contain"></img></a></div>
+		<a href="https://github.com/mosswg/mage_firmware" style="color: rgba(0, 0, 0, var(--bs-text-opacity));">
+		<div class="split split-2 right-img text-center">
+			<img src="https://cdn.mossx.net/mage_keyboard/mage_stacked_medium.png" style="position: relative; max-width:100%; object-fit: cover;"></img>
 		</div>
-
-		<div class="split-2 left-text">
-			<span class="inner-text"> <h1><a href="sierpinski" style="color: rgba(0, 0, 0, var(--bs-text-opacity));">Sierpiński's Triangle Fractal</a></h1> </span>
+		<div class="split split-2 left-text">
+			<span class="inner-text"> <h1>Mage Keyboard</h1> </span>
 		</div>
+		</a>
 	</div>
 
 	</body>
