@@ -201,7 +201,7 @@ function create_footer() {
 
 	var github_link = document.createElement('a');
 	github_link.classList =  "text-muted";
-	github_link.href = "https://github.com/mossx-dev";
+	github_link.href = "https://github.com/mosswg";
 
 	var github_img = document.createElement('img');
 	github_img.src = "logos/github.png";
