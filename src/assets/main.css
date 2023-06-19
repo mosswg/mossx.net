@@ -1,0 +1,80 @@
+@import './base.css';
+
+#app {
+  max-width: 100%;
+  padding: 2rem;
+  margin:auto;
+
+ font-weight: normal;
+
+ --primary-color: 260,24%,54%;
+ --secondary-color: 290,24%,54%;
+ --trinary-color: 230,24%,54%;
+ /*--primary-color: 266,82%,36%;
+ --complementary-color: 266,83%,46%;*/
+}
+
+a {
+  text-decoration: none;
+  color: hsla(var(--primary-color), 1);
+  transition: 0.4s;
+}
+
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(var(--primary-color), 0.2);
+  }
+}
+
+@media (active: active) {
+  a:active {
+    background-color: hsla(var(--primary-color), 0.4);
+  }
+}
+
+
+#nav {
+	position: absolute;
+  left: 50vw;
+  width: fit-content;
+  transform: translateX(-50%);
+  top: 2%;
+}
+
+.abs-center {
+	text-align: center;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+.centered-view-container {
+	overflow: scroll;
+	position: absolute;
+	left: 50vw;
+	top: 50vh;
+	height: 80vh;
+	width: min(900px, 80vw);
+	transform: translate(-50%, -50%);
+}
+
+.centered-view-container > div {
+	overflow: hidden;
+}
+
+.blog-post {
+	width: min(900px, 80vw);
+	font-size: 1.5rem;
+	overflow: scroll;
+}
+
+.blog-title {
+	color: hsl(var(--secondary-color))
+}
+
+.blog-text > h2 {
+	color: hsl(var(--trinary-color))
+}
