@@ -1,15 +1,12 @@
 <template>
-  <div class="missing">
-    <h1>404</h1>
+  <div class="abs-center">
+    <h1 class="primary-color oops">Oops this page doesn't exist</h1>
   </div>
 </template>
 
+
 <style>
-@media (min-width: 1024px) {
-  .missing {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
+.oops {
+	font-size: 3rem;
 }
 </style>

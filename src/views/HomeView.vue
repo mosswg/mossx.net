@@ -1,7 +1,7 @@
 <template>
   <main>
-  	<div class="abs-center welcome-div">
-  	<h1>Welcome!!</h1>
+  	<div class="centered-view-container welcome-div">
+	<h1 class="primary-color">Welcome!!</h1>
 	<h2>I'm moss and this is my website</h2>
   	</div>
   </main>
@@ -12,6 +12,7 @@
 
 .welcome-div {
 	font-size: 2rem;
+	margin-top: 1rem;
 }
 
 </style>
